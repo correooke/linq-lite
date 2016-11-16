@@ -2,11 +2,12 @@
   "name": "jest-scaffold",
   "version": "1.0.0",
   "description": "",
+  "repository": "https://github.com/cbayles/jest-scaffold",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "jest-cli": "^17.0.0"
+  "dependencies": {
+    "jest": "^17.0.2"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "jest --watch",
     "test:coverage": "jest --coverage",
