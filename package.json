@@ -1,19 +1,25 @@
 {
-  "name": "jest-scaffold",
+  "name": "linq-lite",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/cbayles/jest-scaffold",
+  "repository": "",
   "main": "index.js",
   "dependencies": {
-    "jest": "^17.0.2"
+    "jest": "^24.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
   "scripts": {
     "test": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:run": "jest"
   },
-  "author": "Chris Bayles (https://github.com/cbayles)",
+  "author": "Emiliano Ocariz",
   "license": "ISC",
   "jest": {
     "testEnvironment": "node",
