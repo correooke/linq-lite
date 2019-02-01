@@ -1,8 +1,7 @@
 {
-  "name": "linq-lite",
-  "version": "1.0.0",
-  "description": "",
-  "repository": "",
+  "name": "linq-groupby",
+  "version": "0.1.0",
+  "description": "linq like linq-groupby",
   "main": "index.js",
   "dependencies": {
     "jest": "^24.0.0"
@@ -19,6 +18,10 @@
     "test:coverage": "jest --coverage",
     "test:run": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/correooke/linq-lite"
+  },  
   "author": "Emiliano Ocariz",
   "license": "ISC",
   "jest": {
