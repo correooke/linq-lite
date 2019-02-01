@@ -1,6 +1,6 @@
 {
   "name": "linq-groupby",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "linq like linq-groupby",
   "main": "index.js",
   "dependencies": {
