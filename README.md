@@ -1,24 +1,40 @@
 # linq-lite library
 
-# Use Mode
+> Really simple library to process a array and group by one or more columns, and sum other columns. Similar to linq behaviour. *
 
-    const objects = [
-        { col_uno: '1', col_dos: '01', col_tres: '001', otro: 1 },
-        { col_uno: '2', col_dos: '00', col_tres: '001', otro: 1 },
-        { col_uno: '3', col_dos: '01', col_tres: '002', otro: 1 },
-        { col_uno: '1', col_dos: '01', col_tres: '001', otro: 1 }
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+
+## Install
+
+$ npm install linq-groupby
+
+Or
+
+$ yarn add linq-groupby
+
+## Usage Mode
+
+You can learn to use it by a basic example: 
+
+    const exampleData = [
+        { colFirst: '1', colSecond: '01', col_three: '001', other: 1 },
+        { colFirst: '2', colSecond: '00', col_three: '001', other: 1 },
+        { colFirst: '3', colSecond: '01', col_three: '002', other: 1 },
+        { colFirst: '1', colSecond: '01', col_three: '001', other: 1 }
     ];
         
     const linqQuery = {
-        from: objects, 
+        from: exampleData, 
         groupBy: [
-            'col_tres', 
-            'col_dos',
+            'col_three', 
+            'colSecond',
         ],
         select: [
-            'col_dos',
-            'col_tres', 
-            linqSum('otro'),
+            'colSecond',
+            'col_three', 
+            linqSum('other', 'otherName'),
         ]
     }
     
@@ -26,13 +42,14 @@
 
 
 Output:
-          {col_dos: "01", col_tres: "001", otronombre: 2},
-          {col_dos: "00", col_tres: "001", otronombre: 1},
-          {col_dos: "01", col_tres: "002", otronombre: 1},
+          {colSecond: "01", col_three: "001", otherName: 2},
+          {colSecond: "00", col_three: "001", otherName: 1},
+          {colSecond: "01", col_three: "002", otherName: 1},
 
 
 Start watching and run the tests
 `npm t` OR `npm test` OR `npm run test`
 
+* Other features can be requested and added in the future
 
-# Autor: Emiliano Ocariz
+### Author: Emiliano Ocariz – [@EmilianoOke](https://twitter.com/EmilianoOke)
