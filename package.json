@@ -14,9 +14,9 @@
     "webpack-cli": "^3.2.1"
   },
   "scripts": {
-    "test": "jest --watch",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:run": "jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
