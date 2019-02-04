@@ -39,8 +39,6 @@ You can learn to use it by a basic example:
     }
     
     const r = linq(linqQuery);
-
-
 // Output:
 //        [  {colSecond: "01", col_three: "001", otherName: 2},
 //          {colSecond: "00", col_three: "001", otherName: 1},
